@@ -1,16 +1,31 @@
 <?php return array (
-  'laravel/sail' => 
+  'barryvdh/laravel-dompdf' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Sail\\SailServiceProvider',
+      0 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PDF' => 'Barryvdh\\DomPDF\\Facade',
     ),
   ),
-  'laravel/sanctum' => 
+  'facade/ignition' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Sanctum\\SanctumServiceProvider',
+      0 => 'Facade\\Ignition\\IgnitionServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Flare' => 'Facade\\Ignition\\Facades\\Flare',
+    ),
+  ),
+  'fideloper/proxy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
   'laravel/tinker' => 
@@ -20,11 +35,15 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
-  'laravel/ui' => 
+  'maatwebsite/excel' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Ui\\UiServiceProvider',
+      0 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
     ),
   ),
   'nesbot/carbon' => 
@@ -41,15 +60,15 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
-  'spatie/laravel-ignition' => 
+  'realrashid/sweet-alert' => 
   array (
     'providers' => 
     array (
-      0 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
+      0 => 'RealRashid\\SweetAlert\\SweetAlertServiceProvider',
     ),
     'aliases' => 
     array (
-      'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
+      'Alert' => 'RealRashid\\SweetAlert\\Facades\\Alert',
     ),
   ),
 );
